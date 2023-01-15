@@ -43,6 +43,8 @@
 							th:field = "*{firstName}"
 							class = "form-control"
 							placeholder="Enter Student First Name" 
+							pattern="[A-Za-z]+"
+							required
 							/>
 						</div>
 						
@@ -54,6 +56,8 @@
 							th:field = "*{lastName}"
 							class = "form-control"
 							placeholder="Enter Student Last Name" 
+							pattern="[A-Za-z]+"
+							required
 							/>
 						</div>
 						
@@ -63,8 +67,10 @@
 							type = "text"
 							name = "email"
 							th:field = "*{email}"
+							pattern="[A-Za-z0-9]+"
 							class = "form-control"
 							placeholder="Enter Student Email" 
+							required
 							/>
 						</div>
 						
