@@ -9,6 +9,6 @@ This repository contains a project with a number of vulnerabilities that you wil
 - Cryptographic Failure
 
 # XSS Resolve
-for preventing XSS attack i am validating the input data and specifythe limitation using the pattern attribute in input tag of html.
- 
-I haven't implement the attack prevention across the server.
+XSS attack - using sanitization of text by specifying the th:text - that treats as text
+SQL Inj..  - we prevent this by using the spring hibernation database process - "REPOSITORY.findbyId"
+Cryptographic Failure - the jwt cryptographic key is very simple that is vernulable to attack because it can be easily be guessed.
